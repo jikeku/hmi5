@@ -16,8 +16,8 @@ body.body_iframe{
 
 #logo {
     background-image: url("/bootstrap/img/asus_logo.png");
-    width: 150px;
-    height: 71px;
+    width: 165px;
+    height: 77px;
     margin-top: 40px;
 }
 #logo:hover {
@@ -26,7 +26,7 @@ body.body_iframe{
 
 #cpu_info, #mem_info, .adv_info {
     text-decoration: none;
-    border-bottom: 1px dotted #005580;
+    border-bottom: 1px dotted #EA2C1E;
 }
 #cpu_info:hover, #mem_info:hover, .adv_info:hover {
     cursor: pointer;
@@ -318,15 +318,15 @@ li div.accordion a {
 
 .box.grad_colour_dark_blue h2.box_head {
     background-color: #006dcc;
-    background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-    background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-    background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-    background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-    background-image: linear-gradient(top, #0088cc, #0044cc);
+    background-image: -moz-linear-gradient(top, #FF4242, #E51111);
+    background-image: -ms-linear-gradient(top, #FF4242, #E51111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF4242), to(#E51111));
+    background-image: -webkit-linear-gradient(top, #FF4242, #E51111);
+    background-image: -o-linear-gradient(top, #FF4242, #E51111);
+    background-image: linear-gradient(top, #FF4242, #E51111);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
-    border-color: #0044cc #0044cc #002a80;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4242', endColorstr='#E51111', GradientType=0);
+    border-color: #E51111 #E51111 #002a80;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -603,7 +603,7 @@ textarea[readonly] {
 
 .ddown-list div:hover, .share-list a:hover {
     cursor:default;
-    color: #005580;
+    color: #EA2C1E;
 }
 
 .input-append {
