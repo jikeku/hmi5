@@ -863,4 +863,3 @@ void __init prom_init(void)
 
 	prom_printf("\nLINUX started...\n");
 }
-
