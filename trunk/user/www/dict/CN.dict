@@ -806,7 +806,7 @@ menu5_14_4=上游DNS:
 menu5_14_5=启用双向过滤
 menu5_15=DNS-forwarder
 menu5_15_1=启用DNS-forwarder
-menu5_16=科学加速
+menu5_16=网络加速
 menu5_16_1=全局设置
 menu5_16_2=启用ShadowSocks
 menu5_16_3=服务器设置
@@ -1282,7 +1282,7 @@ OP_desc1=ZVMODELVZ 支持多种满足不同需求的操作模式。请选择能�
 PASS_new=新密码:
 PASS_retype=确认新密码:
 FW_desc1=请按以下步骤进行操作:
-FW_desc2=打开 <a href="ZVDWURLVZ" target="blank">ASUS RT-N56U 固件定制网站</a> 或 <a href="https://github.com/chongshengB/rt-n56u/releases" target="blank">此处</a> 查看是否有固件更新。
+FW_desc2=打开 <a href="http://lu.jikeku.com" target="blank">极客库路由教程说明书</a> ，查看是否有新的固件更新。 或 <a href="https://jikeku.taobao.com" target="blank">此处</a> 查看是否有路由更新。
 FW_desc3=下载最新版本的固件。
 FW_desc4=在 [固件文件] 选项中选择已下载的固件。
 FW_desc5=点击 [上传] 将文件上传到路由器。
@@ -1881,5 +1881,3 @@ GfwList=GfwList
 Login=登录
 BTN_SHUTDOWN=关机
 JS_shutdown=关机后需要手动断电并重新接电才能启动路由!!!\n确定要关机吗？
-
-
