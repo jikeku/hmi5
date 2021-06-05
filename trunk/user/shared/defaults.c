@@ -68,10 +68,10 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_ipaddr", "0.0.0.0" },		/* WAN IP address */
 	{ "wan_netmask", "0.0.0.0" },		/* WAN netmask */
 	{ "wan_gateway", "0.0.0.0" },		/* WAN gateway */
-	{ "wan_dnsenable_x", "1" },
-	{ "wan_dns1_x", "" },
-	{ "wan_dns2_x", "" },
-	{ "wan_dns3_x", "" },
+	{ "wan_dnsenable_x", "0" },
+	{ "wan_dns1_x", "114.114.114.114" },
+	{ "wan_dns2_x", "115.115.115.115" },
+	{ "wan_dns3_x", "223.5.5.5" },
 	{ "wan_hostname", "" },			/* WAN hostname */
 	{ "wan_vci", "" },			/* WAN vendor class identifier (OPT-60) */
 	{ "wan_ttl_fix", "0" },
@@ -163,7 +163,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_gmode", "2" },			/* A/N Mixed */
 #endif
 	{ "wl_mcs_mode", "0" },
-	{ "wl_channel", "0" },			/* Channel number */
+	{ "wl_channel", "44" },			/* Channel number */
 	{ "wl_bcn", "100" },			/* Beacon interval */
 	{ "wl_dtim", "1" },			/* DTIM period */
 	{ "wl_rts", "2347" },			/* RTS threshold */
@@ -196,7 +196,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_APSDCapable", "0" },
 	{ "wl_HT_OpMode", "0" },
 #if BOARD_HAS_5G_11AC
-	{ "wl_HT_BW", "2" },
+	{ "wl_HT_BW", "3" },
 #else
 	{ "wl_HT_BW", "1" },
 #endif
@@ -268,7 +268,7 @@ struct nvram_pair router_defaults[] = {
 	{ "rt_ssid", DEF_WLAN_2G_SSID },
 	{ "rt_gmode", "5" },			/* g/n mixed */
 	{ "rt_mcs_mode", "0" },
-	{ "rt_channel", "0" },
+	{ "rt_channel", "11" },
 	{ "rt_bcn", "100" },
 	{ "rt_dtim", "1" },
 	{ "rt_gmode_protection", "auto" },
@@ -472,13 +472,13 @@ struct nvram_pair router_defaults[] = {
 	{ "hdd_apmoff", "0" },
 	/*WEB DIY*/
 	{ "w_ai", "1" },
-	{ "w_vpn_s", "1" },
-	{ "w_vpn_c", "1" },
+	{ "w_vpn_s", "0" },
+	{ "w_vpn_c", "0" },
 	{ "w_wnet", "1" },
 	{ "w_sys", "1" },
-	{ "w_usb", "1" },
+	{ "w_usb", "0" },
 	{ "w_net", "1" },
-	{ "w_log", "1" },
+	{ "w_log", "0" },
 	{ "w_scu", "1" },
 	{ "w_dnsf", "1" },
 	{ "w_ss", "1" },
@@ -519,8 +519,8 @@ struct nvram_pair router_defaults[] = {
 	{ "ip6_lan_sfpe", "4352" }, // 0x1100
 
 	{ "upnp_enable_x", "1" },
-	{ "upnp_proto", "0" },
-	{ "upnp_secure", "1" },
+	{ "upnp_proto", "2" },
+	{ "upnp_secure", "0" },
 	{ "upnp_clean_min", "10" },
 	{ "upnp_clean_int", "600" },
 	{ "upnp_iport_min", "21" },
@@ -818,7 +818,7 @@ struct nvram_pair router_defaults[] = {
 	{ "dhcp_wins_x", "" },
 	{ "dhcp_filter_aaa", "0" },
 	{ "dhcp_min_ttl", "0" },
-	{ "dhcp_verbose", "0" },		/* 0 : quiet, 1: verbose DHCP, 2: verbose DHCPv6, 3: verbose all */
+	{ "dhcp_verbose", "1" },		/* 0 : quiet, 1: verbose DHCP, 2: verbose DHCPv6, 3: verbose all */
 	{ "dhcp_static_x", "0" },
 	{ "dhcp_static_arp", "0" },
 	{ "dhcp_staticnum_x", "0" },
@@ -993,7 +993,7 @@ struct nvram_pair router_defaults[] = {
 
 #if defined(CONFIG_RALINK_MT7621) || (defined(CONFIG_RALINK_MT7620) && !defined(BOARD_N14U))
 #if defined(USE_MT7615_AP) // hwnat is disabled by default
-	{ "hw_nat_mode", "2" },
+	{ "hw_nat_mode", "4" },
 #else
 	{ "hw_nat_mode", "4" },
 #endif
@@ -1002,11 +1002,11 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "sw_nat_mode", "0" },
 #if defined(USE_SFE)
-	{ "sfe_enable", "0" },
+	{ "sfe_enable", "2" },
 #endif
 	{ "fw_syn_cook", "0" },
 	{ "fw_mac_drop", "0" },
-	{ "nf_nat_type", "2" },
+	{ "nf_nat_type", "1" },
 	{ "nf_nat_loop", "1" },
 #if (BOARD_RAM_SIZE > 128)
 	{ "nf_max_conn", "32768" },
