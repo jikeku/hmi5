@@ -404,8 +404,8 @@ struct nvram_pair router_defaults[] = {
 	{ "aria_ropen", "0" },
 	
 	/*autoreboot*/
-	{ "reboot_schedule_enable", "0" },
-	{ "reboot_schedule", "00000000000" },
+	{ "reboot_schedule_enable", "1" },
+	{ "reboot_schedule", "11111110400" },
 	
     /* koolproxy AD */
 	{ "koolproxy_enable", "0"},
@@ -637,7 +637,7 @@ struct nvram_pair router_defaults[] = {
 	{ "backup_server", "nil" },
 	{ "udp_relay_server", "nil" },
 	{ "ss_threads", "0" },
-	{ "ss_run_mode", "gfw" },
+	{ "ss_run_mode", "router" },
 	{ "pdnsd_enable", "0" },
 	{ "s_dports", "0" },
 	{ "ssp_local_port", "1080" },
