@@ -565,6 +565,7 @@ EOF
 # Custom user hosts file
 # Example:
 # 192.168.1.100		Boo
+192.168.31.1		miwifi.com
 192.168.31.1		jkk.com
 
 EOF
