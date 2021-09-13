@@ -957,7 +957,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ether_uport", "0" },		/* WAN port in AP mode is static upstream by default */
 	{ "ether_m2u", "2" },
 	{ "ether_green", "1" },
-	{ "ether_eee", "0" },
+	{ "ether_eee", "1" },
 #if defined(USE_RTL8367)
 	{ "ether_jumbo", "1" },
 #else
