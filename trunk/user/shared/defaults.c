@@ -70,7 +70,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_gateway", "0.0.0.0" },		/* WAN gateway */
 	{ "wan_dnsenable_x", "0" },
 	{ "wan_dns1_x", "114.114.114.114" },
-	{ "wan_dns2_x", "115.115.115.115" },
+	{ "wan_dns2_x", "114.114.115.115" },
 	{ "wan_dns3_x", "223.5.5.5" },
 	{ "wan_hostname", "" },			/* WAN hostname */
 	{ "wan_vci", "" },			/* WAN vendor class identifier (OPT-60) */
@@ -810,11 +810,11 @@ struct nvram_pair router_defaults[] = {
 	{ "dhcp_end", DEF_LAN_DHCP_END },	/* Last assignable DHCP address */
 	{ "dhcp_enable_x", "1" },
 	{ "dhcp_lease", "86400" },
-	{ "dhcp_gateway_x", "" },
+	{ "dhcp_gateway_x", "192.168.31.1" },
 	{ "dhcp_dns1_x", "114.114.114.114" },
-	{ "dhcp_dns2_x", "223.5.5.5" },
+	{ "dhcp_dns2_x", "114.114.115.115" },
 	{ "dhcp_dns3_x", "" },
-	{ "dhcp_dnsv6_x", "2400:3200::1 2400:3200:baba::1" },
+	{ "dhcp_dnsv6_x", "" },
 	{ "dhcp_wins_x", "" },
 	{ "dhcp_filter_aaa", "0" },
 	{ "dhcp_min_ttl", "0" },
