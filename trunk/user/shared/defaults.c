@@ -810,7 +810,7 @@ struct nvram_pair router_defaults[] = {
 	{ "dhcp_end", DEF_LAN_DHCP_END },	/* Last assignable DHCP address */
 	{ "dhcp_enable_x", "1" },
 	{ "dhcp_lease", "86400" },
-	{ "dhcp_gateway_x", "192.168.31.1" },
+	{ "dhcp_gateway_x", "" },
 	{ "dhcp_dns1_x", "114.114.114.114" },
 	{ "dhcp_dns2_x", "114.114.115.115" },
 	{ "dhcp_dns3_x", "" },
@@ -961,7 +961,7 @@ struct nvram_pair router_defaults[] = {
 #if defined(USE_RTL8367)
 	{ "ether_jumbo", "1" },
 #else
-	{ "ether_jumbo", "0" },
+	{ "ether_jumbo", "1" },
 #endif
 #if (BOARD_NUM_ETH_LEDS > 1)
 	{ "ether_led0", "3" },
